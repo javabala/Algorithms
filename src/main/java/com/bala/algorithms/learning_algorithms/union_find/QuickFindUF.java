@@ -2,10 +2,12 @@ package com.bala.algorithms.learning_algorithms.union_find;
 
 /***
  * 
+ * this algorithm take quadratic time to union object. its not an efficient
+ * algorithm.
+ * 
  * @author bala
  * 
- *         this algorithm take quadratic time to union object. its not an
- *         efficient algorithm.
+ * 
  *
  */
 public class QuickFindUF {
@@ -25,13 +27,14 @@ public class QuickFindUF {
 
 	/**
 	 * 
+	 * this method connects 2 elements. iterate all the elements in the array
+	 * and if the elment matches the given element p then change that element
+	 * with q element, so that they both connected each other.
+	 * 
 	 * @param p
 	 * @param q
 	 * 
-	 *            this method connects 2 elements. iterate all the elements in
-	 *            the array and if the elment matches the given p element then
-	 *            change that element with q element, so that they both
-	 *            connected each other.
+	 * 
 	 */
 	public void union(int p, int q) {
 		int pid = id[p];
